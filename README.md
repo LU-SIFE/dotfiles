@@ -20,3 +20,10 @@
  `++:.                           `-/+/                           
  .`                                 `/                           
 ```
+## Package installation:
+
+(I don't remember half of what I have installed lol)
+```
+sudo pacman -S rxvt-unicode-truecolor polybar pulseaudio brightnessctl thunar ranger maim nano rofi xorg xorg-server btop feh
+```
+now just drap and drop the files from this repo into your user folder, `~/`.
