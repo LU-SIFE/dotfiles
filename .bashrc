@@ -8,3 +8,5 @@
 alias ls='ls --color=auto'
 PS1='\e[1;93m[\e[1;95m\u ~\e[1;93m]\e[m '
 LS_COLORS="$LS_COLORS:di=1;95"
+export VISUAL=nvim;
+export EDITOR=nvim;
