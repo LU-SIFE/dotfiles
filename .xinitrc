@@ -2,10 +2,11 @@ feh --bg-scale '/home/lusife/Wallpaper/lusife.png' &
 pulseaudio --daemonize &
 picom -cb &
 
-polybar -c ~/.config/polybar/config.ini &
-polybar -c ~/.config/polybar/config2.ini &
-polybar -c ~/.config/polybar/config3.ini &
-polybar -c ~/.config/polybar/config4.ini &
+polybar workspace &
+polybar stats &
+polybar audio &
+polybar battery &
+polybar music &
 
 xrdb -merge ~/.Xresources &
 xsetroot -cursor_name left_ptr &
