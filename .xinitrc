@@ -1,5 +1,8 @@
+alias clera="clear" &
+
+
+pulseaudio -D &
 feh --bg-scale '/home/lusife/Wallpaper/lusife.png' &
-pulseaudio --daemonize &
 picom -cb &
 
 polybar workspace &
