@@ -1,3 +1,3 @@
 ## Dotfiles
 
-[](screenshot.png)
+![](screenshot.png)
