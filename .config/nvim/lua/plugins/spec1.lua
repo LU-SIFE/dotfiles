@@ -67,21 +67,46 @@ return {
     opts = { use_default_keymaps = false, max_join_length = 150 },
   },
 
-  {
-    "monaqa/dial.nvim",
-    -- lazy-load on keys
-    -- mode is `n` by default. For more advanced options, check the section on key mappings
-    keys = { "<C-a>", { "<C-x>", mode = "n" } },
-  },
+{
+  'nvimdev/dashboard-nvim',
+  event = 'VimEnter',
+  config = function()
+    require('dashboard').setup {
+      
 
-  -- local plugins need to be explicitly configured with dir
-  { dir = "~/projects/secret.nvim" },
+    theme = 'hyper',
+    config = {
+      week_header = {
+       enable = true,
+      },
+      shortcut = {
+        { desc = '󰊳 Update', group = '@property', action = 'Lazy update', key = 'u' },
+        {
+          icon = ' ',
+          icon_hl = '@variable',
+          desc = 'Files',
+          group = 'Label',
+          action = 'Telescope find_files',
+          key = 'f',
+        },
+        {
+          desc = ' Apps',
+          group = 'DiagnosticHint',
+          action = 'Telescope app',
+          key = 'a',
+        },
+        {
+          desc = ' dotfiles',
+          group = 'Number',
+          action = 'Telescope dotfiles',
+          key = 'd',
+        },
+      },
+    },
+	    -- config
+    }
+  end,
+  dependencies = { {'nvim-tree/nvim-web-devicons'}}
+}
 
-  -- you can use a custom url to fetch a plugin
-  { url = "git@github.com:folke/noice.nvim.git" },
-
-  -- local plugins can also be configured with the dev option.
-  -- This will use {config.dev.path}/noice.nvim/ instead of fetching it from GitHub
-  -- With the dev option, you can easily switch between the local and installed version of a plugin
-  { "folke/noice.nvim", dev = true },
 }
