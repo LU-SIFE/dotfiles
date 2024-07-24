@@ -8,6 +8,7 @@ export PATH="/home/michael/bin:$PATH"
 
 alias clock='tclock -c=#9D00FF'
 alias ls='ls --color=auto -a'
+alias ip='ip -c'
 alias grep='grep --color=auto'
 alias clera='clear'
 
