@@ -1,6 +1,6 @@
 return {
 
-
+-- Theme
     {
       "folke/tokyonight.nvim",
       lazy = false,
@@ -9,6 +9,7 @@ return {
           vim.cmd.colorscheme("tokyonight")
       end,
     },
+-- Treesitter
     {
       "nvim-treesitter/nvim-treesitter",
       build = ":TSUpdate",
@@ -20,6 +21,7 @@ return {
         require("nvim-treesitter.configs").setup(opts)
       end,
     },
+-- Neorg
     {
       "nvim-neorg/neorg",
       lazy = false,
@@ -44,8 +46,7 @@ return {
         vim.wo.conceallevel = 2
       end,
     },
-
-
+-- Dashboard
     {
 	"glepnir/dashboard-nvim",
 	event = 'VimEnter',
@@ -58,4 +59,19 @@ return {
 	end,
 	dependencies = { {'nvim-tree/nvim-web-devicons'} }
     },
+-- LuaLine
+    {
+	"nvim-lualine/lualine.nvim",
+	lazy = false,
+
+	config = function()
+		require("lualine").setup {
+			options = {
+				icons_enabled = true,
+				theme = 'auto',
+			}
+		}
+	end,
+	dependencies = { {"nvim-tree/nvim-web-devicons"} }
+    }
 }
