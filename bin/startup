@@ -1,0 +1,7 @@
+#! /bin/sh
+
+echo -e "\n$(date)\n\nHappy Coding! \n" &&
+
+	read -sn 1 &&
+
+exit
