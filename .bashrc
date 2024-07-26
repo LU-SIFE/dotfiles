@@ -3,8 +3,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-#add custom bin files to path
+# Add custom bin files to path
 export PATH="/home/michael/bin:$PATH"
+
+# Set neovim as the default editor
+export EDITOR='nvim'
+export VISUAL='nvim'
 
 alias clock='tclock -c=#9D00FF'
 alias ls='ls --color=auto -a'
@@ -12,7 +16,7 @@ alias ip='ip -c'
 alias grep='grep --color=auto'
 alias clera='clear'
 
-# Custom Sudo prompt
+# Custom sudo prompt
 export SUDO_PROMPT=$(echo -e '\033[1m\033[38;5;219m[sudo] \e[0mEnter Password: ')
 
 
