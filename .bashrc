@@ -12,4 +12,8 @@ alias ip='ip -c'
 alias grep='grep --color=auto'
 alias clera='clear'
 
-PS1='[ > ] '
+# Custom Sudo prompt
+export SUDO_PROMPT=$(echo -e '\033[1m\033[38;5;219m[sudo] \e[0mEnter Password: ')
+
+
+PS1='\033[1m\033[38;5;219m[ > ]\e[0m '

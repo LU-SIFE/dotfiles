@@ -185,8 +185,11 @@ bindsym $mod+n exec "kitty nvim"
 
 
 #startup routine
-exec_always --no-startup-id autotiling
-exec kitty --title startup1 -e nvim
-exec kitty --title startup2 -e tclock -c=#9D00FF
-exec kitty --title startup3 -e cbonsai -S
+#exec_always --no-startup-id autotiling
 
+exec --no-startup-id kitty --hold -e nvim
+exec --no-startup-id sleep 0.1 && kitty --hold -e ~/bin/startup
+exec --no-startup-id sleep 0.2 && kitty --title startup-right --hold -e yay -Syu
+
+for_window [title="startup-right"] resize set width 403 px
+for_window [title="startup-right"] resize set height 275 px
