@@ -189,7 +189,7 @@ bindsym $mod+n exec "kitty nvim"
 
 exec --no-startup-id kitty --hold -e nvim
 exec --no-startup-id sleep 0.1 && kitty --hold -e ~/bin/startup
-exec --no-startup-id sleep 0.2 && kitty --title startup-right --hold -e yay -Syu
+exec --no-startup-id sleep 0.2 && kitty --title startup-right --hold -e ~/bin/colors
 
 for_window [title="startup-right"] resize set width 403 px
 for_window [title="startup-right"] resize set height 275 px

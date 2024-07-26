@@ -55,18 +55,6 @@ return {
           					action = 'Telescope find_files hidden=true',
           					key = 'f',
         				},
-        				{
-          					desc = ' Apps',
-          					group = 'DiagnosticHint',
-          					action = 'Telescope app',
-          					key = 'a',
-        				},
-        				{
-          					desc = ' dotfiles',
-          					group = 'Number',
-          					action = 'Telescope dotfiles',
-          					key = 'd',
-					},
 				},
 			},
 		}
@@ -87,5 +75,10 @@ return {
 		}
 	end,
 	dependencies = { {"nvim-tree/nvim-web-devicons"} }
+    },
+
+-- multi cursor
+    {
+	"mg979/vim-visual-multi"
     }
 }
