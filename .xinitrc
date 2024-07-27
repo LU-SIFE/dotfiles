@@ -1,6 +1,6 @@
 xrdb ~/.Xresources
 
-feh --bg-scale /home/michael/wallpaper.jpg &
+feh --bg-scale ~/wallpaper.jpg &
 picom &
 autotiling &
 i3
