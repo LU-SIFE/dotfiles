@@ -15,9 +15,16 @@ return {{
 				style = "none",
 			},
       			separator_style = "slope",
+			offsets = {
+				{
+					filetype = "NvimTree",
+					text = "󰷏 File Explorer",
+					text_align = "center",
+					seperator = false
+				}
+			},
     		},
   	},
 
 	dependencies = { { 'nvim-tree/nvim-web-devicons' } },
-
 }}
