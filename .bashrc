@@ -11,7 +11,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 alias clock='tclock -c=#9D00FF'
-alias ls='ls --color=auto -a'
+alias ls='ls --color=auto'
 alias ip='ip -c'
 alias grep='grep --color=auto'
 alias clera='clear'

@@ -63,7 +63,7 @@ local theme = lush(function(injected_functions)
        DiffChange     { bg = black0, fg = white1 }, -- Diff mode: Changed line |diff.txt|
        DiffDelete     { bg = background, fg = red1, bold = true }, -- Diff mode: Deleted line |diff.txt|
        DiffText       { bg = cyan0, fg = white1 }, -- Diff mode: Changed text within a changed line |diff.txt|
-    -- EndOfBuffer    { bg = background, fg = background }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
+       EndOfBuffer    { bg = background, fg = background }, -- Filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
        TermCursor     { bg = foreground, fg = background }, -- Cursor in a focused terminal
        TermCursorNC   { bg = background, fg = black1 }, -- Cursor in an unfocused terminal
        ErrorMsg       { bg = background, fg = red0 }, -- Error messages on the command line
@@ -280,7 +280,4 @@ local theme = lush(function(injected_functions)
 }
 end)
 
--- Return our parsed theme for extension or use elsewhere.
 return theme
-
--- vi:nowrap
