@@ -1,0 +1,8 @@
+#!/bin/bash
+
+OPTS='--info=inline --print-query --bind=ctrl-space:print-query,tab:replace-query'
+
+FILE=$(ls ~/Media/music | fzf $OPTS | tail -1)
+
+echo -e "$FILE\n"
+mpv ~/Media/music/$FILE

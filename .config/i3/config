@@ -24,12 +24,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -135,7 +129,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-msg exit"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -164,6 +158,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#Begin Custom config
+
 default_border none
 gaps inner 5
 
@@ -180,16 +176,35 @@ bindsym $mod+mod1+Down exec "brightnessctl s 5%-"
 #screenshots
 bindsym $mod+p exec "maim ~/Media/screenshots/$(date +%s).png"
 
-#neovide
+#neovim
 bindsym $mod+n exec "kitty nvim"
 
-
 #startup routine
-#exec_always --no-startup-id autotiling
+exec_always --no-startup-id autotiling
 
 exec --no-startup-id kitty --hold -e nvim
-exec --no-startup-id sleep 0.1 && kitty --hold -e ~/bin/startup
-exec --no-startup-id sleep 0.2 && kitty --title startup-right --hold -e ~/bin/colors
+exec --no-startup-id sleep 0.3 && kitty --hold -e ~/bin/startup
+exec --no-startup-id sleep 0.5 && kitty --title startup-right --hold -e ~/bin/colors
 
 for_window [title="startup-right"] resize set width 403 px
 for_window [title="startup-right"] resize set height 275 px
+
+# Audio
+bindsym XF86AudioMute exec --no-startup-id pamixer -t && $refresh_i3status
+bindsym XF86AudioRaiseVolume exec --no-startup-id pamixer -i 1 && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pamixer -d 1 && $refresh_i3status
+
+# mpv player menu
+for_window [title="mpv"] floating enable resize set width 400
+for_window [title="mpv"] resize set height 200
+for_window [title="mpv"] move position 5px 5px
+
+bindsym $mod+m exec kitty --title mpv -e ~/bin/music
+
+
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show

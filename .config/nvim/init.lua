@@ -1,9 +1,9 @@
 require("config.lazy")
 
-vim.opt.termguicolors = true
-vim.cmd([[colorscheme ashes_dark]])
+-- Clipboard
 vim.cmd([[set clipboard+=unnamedplus]])
-vim.cmd([[set mousemoveevent]])
+-- Colorscheme (possibly move to ./plugins/colorscheme.lua?
+vim.cmd([[colorscheme ashes_dark]])
 
 local lsp_zero = require('lsp-zero')
 
@@ -13,7 +13,6 @@ lsp_zero.on_attach(function(client, bufnr)
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
-require('mason').setup({})
 require('mason-lspconfig').setup({
   handlers = {
     function(server_name)
@@ -80,4 +79,3 @@ vim.api.nvim_set_hl(0, 'CmpItemKindKeyword', { bg='NONE', fg='#D4D4D4' })
 vim.api.nvim_set_hl(0, 'CmpItemKindProperty', { link='CmpItemKindKeyword' })
 vim.api.nvim_set_hl(0, 'CmpItemKindUnit', { link='CmpItemKindKeyword' })
 
-vim.opt.termguicolors = true
