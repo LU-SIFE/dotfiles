@@ -2,14 +2,17 @@
 
 OPTS='--info=inline --print-query --bind=ctrl-space:print-query,tab:replace-query'
 
+MPV_OPTS='--msg-level=all=no,statusline=status --no-video --term-status-msg=${filename}\n\n[${playback-time}/${time-remaining}]'
+
 # Get music file
 FILE=$(ls ~/Media/music | fzf $OPTS | tail -1)
-echo -e "$FILE\n"
 
 # Checks if string is empty
 if [ -z "$FILE" ]
 then
 	exit
 else
-	mpv ~/Media/music/$FILE
+	#resizes the window once the song has been selected (i3 specific)
+	i3-msg resize set height 100 
+	mpv $MPV_OPTS ~/Media/music/$FILE
 fi
