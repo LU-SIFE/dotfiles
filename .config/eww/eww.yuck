@@ -1,0 +1,12 @@
+(defwindow main_menu
+  :stacking "fg"
+  :windowtype "normal"
+  :wm-ignore true
+  :geometry (geometry
+              :width "10%"
+              :height "10%")
+  (widget))
+
+(defwidget widget []
+(button :onclick "eww close main_menu" "heya")
+)
