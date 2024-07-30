@@ -1,7 +1,7 @@
 return {
 'nvim-tree/nvim-tree.lua',
 version = '*',
-lazy = false,
+lazy = true,
 opts = {
 	sort = {sorter = 'case_sensitive'},
 	view = {width = 30},
