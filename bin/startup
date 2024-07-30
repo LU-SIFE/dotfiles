@@ -1,7 +1,7 @@
 #! /bin/sh
+i3-msg -q resize set width 409 px &&
 
-echo -e "\n$(date)\n\nHappy Coding! \n" &&
-
-	read -sn 1 &&
-
+echo -e "$(date)\n" &&
+	~/bin/colors &&
+echo -e "Happy Coding!\n" &&
 exit

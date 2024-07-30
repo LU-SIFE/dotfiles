@@ -10,6 +10,7 @@ export PATH="/home/michael/bin:$PATH"
 export EDITOR='nvim'
 export VISUAL='nvim'
 
+# Alias some stuff
 alias clock='tclock -c=#9D00FF'
 alias ls='ls --color=auto'
 alias ip='ip -c'
@@ -19,5 +20,5 @@ alias clera='clear'
 # Custom sudo prompt
 export SUDO_PROMPT=$(echo -e '\033[1m\033[38;5;219m[sudo] \e[0mEnter Password: ')
 
-
+# Custom prompt
 PS1='\033[1m\033[38;5;219m[ > ]\e[0m '

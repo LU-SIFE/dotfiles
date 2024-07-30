@@ -13,6 +13,6 @@ then
 	exit
 else
 	#resizes the window once the song has been selected (i3 specific)
-	i3-msg resize set height 100 
+	i3-msg -q resize set height 100 &&  
 	mpv $MPV_OPTS ~/Media/music/$FILE
 fi
