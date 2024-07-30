@@ -1,6 +1,6 @@
 return {
 'nvim-lualine/lualine.nvim',
-lazy = false,
+event = { 'BufReadPre' },
 
 opts = {
 	options = {

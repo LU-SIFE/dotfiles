@@ -5,7 +5,7 @@ Theme: Ashes (Dark)
 
 Terminal: Kitty
 
-Editor: Neovim w/ Lazy.nvim
+Editor: Neovim w/ Lazy.nvim (180ms startup time)
 
 Cursor Theme: Capitaine Cursors
 
