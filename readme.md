@@ -16,4 +16,5 @@ WM: i3
 
 ### Music player:
 (pretty much the same as the dmenu. but for music)
+
 ![](Media/dotfiles/music.gif)
