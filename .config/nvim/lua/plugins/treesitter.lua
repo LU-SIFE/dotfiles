@@ -5,7 +5,7 @@ lazy = true,
 cmd = { "TSUpdate" },
 
 opts = {
-	ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'markdown' },
+	ensure_installed = { 'c', 'lua', 'vim', 'vimdoc', 'query', 'markdown', 'html' },
 	highlight = { enable = true },
 }
 }

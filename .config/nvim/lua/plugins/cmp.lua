@@ -3,7 +3,7 @@ return {
 -- cmp and lsp plugins
 {'williamboman/mason.nvim', lazy = true, opts = {}},
 {'williamboman/mason-lspconfig.nvim', lazy = true},
-{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x', lazy = true},
+{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x', lazy = false},
 {'neovim/nvim-lspconfig'},
 {'hrsh7th/cmp-nvim-lsp'},
 {'hrsh7th/nvim-cmp'},
