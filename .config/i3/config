@@ -142,6 +142,11 @@ for_window [title="mpv_player"] resize set height 500
 for_window [title="mpv_player"] move position 5px 5px
 bindsym $mod+m exec kitty --title mpv_player -e ~/bin/music
 
+#bluetooth connection
+for_window [title="bluetooth"] floating enable resize set 500 500
+for_window [title="bluetooth"] move position center
+bindsym $mod+b exec kitty --title bluetooth -e ~/bin/bluetooth
+
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
 

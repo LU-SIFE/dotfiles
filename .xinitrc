@@ -2,7 +2,7 @@
 xrdb ~/.Xresources
 
 #wallpaper
-feh --bg-scale ~/wallpaper.jpg &
+feh --bg-scale ~/media/wallpaper.jpg &
 
 #compositor, autotiling, and wm
 picom &

@@ -22,3 +22,11 @@ export SUDO_PROMPT=$(echo -e '\033[1m\033[38;5;219m[sudo] \e[0mEnter Password: '
 
 # Custom prompt
 PS1='\033[1m\033[38;5;219m[ > ]\e[0m '
+
+# pnpm
+export PNPM_HOME="~/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

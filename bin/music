@@ -6,7 +6,7 @@ MPV_OPTS='--msg-level=all=no,statusline=status --no-video --term-status-msg=\e[1
 
 
 # Get music file
-cd ~/Media/music &&
+cd ~/media/music &&
 FILE=$(find | sed 's/^..//' | fzf $OPTS | tail -1)
 
 # Checks if string is empty

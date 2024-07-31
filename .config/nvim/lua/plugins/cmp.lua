@@ -6,8 +6,8 @@ return {
 {'VonHeikemen/lsp-zero.nvim', branch = 'v3.x', lazy = false},
 {'neovim/nvim-lspconfig'},
 {'hrsh7th/cmp-nvim-lsp'},
+{'L3MON4D3/luasnip', lazy = true},
 {'hrsh7th/nvim-cmp'},
-{'L3MON4D3/LuaSnip', lazy = true},
 {'onsails/lspkind.nvim'},
 
 -- yuck support because why not
