@@ -2,7 +2,7 @@
 
 OPTS='--info=inline --print-query --bind=ctrl-space:print-query,tab:replace-query'
  
-MPV_OPTS='--msg-level=all=no,statusline=status --no-video --term-status-msg=\e[1m\e[38;5;219m󰝚${filename}\n\n[${playback-time}/${time-remaining}]'
+MPV_OPTS='--msg-level=all=no,statusline=status --no-video --term-status-msg=\e[1m\e[38;5;219m󰝚${media-title}\n\n[${playback-time}/${time-remaining}]'
 
 
 # Get music file
