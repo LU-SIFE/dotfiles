@@ -2,12 +2,26 @@
 
 OPTS='--info=inline --print-query --bind=ctrl-space:print-query,tab:replace-query'
  
-MPV_OPTS='--msg-level=all=no,statusline=status --no-video --term-status-msg=\e[1m\e[38;5;219m${filename}\n\n[${playback-time}/${time-remaining}]'
+MPV_OPTS='--msg-level=all=no,statusline=status --no-video --term-status-msg=\e[1m\e[38;5;219m󰝚${filename}\n\n[${playback-time}/${time-remaining}]'
 
 
 # Get music file
 cd ~/media/music &&
-FILE=$(find | sed 's/^..//' | fzf $OPTS | tail -1)
+FILE=$(ls | sort -Vr | sed -e '$a\./' | fzf $OPTS | tail -1)
+
+while [ -d $FILE ]
+do
+	if [ $FILE = './' ]
+	then
+		break
+	fi
+	cd $FILE
+	FILE=$(ls | sort -Vr | sed -e '$a\./\n..' | fzf $OPTS | tail -1)
+done
+
+
+
+# sed 's/^..//'
 
 # Checks if string is empty
 if [ -z "$FILE" ]
@@ -15,6 +29,6 @@ then
 	exit
 else
 	#resizes the window once the song has been selected (i3 specific)
-	i3-msg -q resize set 200 100 &&  
-	mpv $MPV_OPTS ./$FILE
+	i3-msg -q resize set 400 100 &&  
+	mpv $MPV_OPTS "./$FILE"
 fi

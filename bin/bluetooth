@@ -1,0 +1,1 @@
+bluetoothctl connect 04:99:B9:2C:07:8B && read -sn 1 && exit
