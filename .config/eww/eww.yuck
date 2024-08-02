@@ -5,8 +5,9 @@
   :geometry (geometry
               :width "10%"
               :height "10%")
-  (widget))
+  (widget_button))
 
-(defwidget widget []
-(button :onclick "eww close main_menu" "heya")
+(defwidget widget_button []
+(button :class "main_button" :onclick "~/bin/eww close main_menu" "heya")
 )
+

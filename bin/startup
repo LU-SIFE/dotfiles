@@ -1,4 +1,6 @@
 #! /bin/sh
+sleep 0.1 &&
+
 i3-msg -q resize set width 409 px &&
 
 echo -e "$(date)\n" &&

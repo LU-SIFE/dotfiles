@@ -29,6 +29,6 @@ then
 	exit
 else
 	#resizes the window once the song has been selected (i3 specific)
-	i3-msg -q resize set 400 100 &&  
+	i3-msg -q resize set 475 100 &&  
 	mpv $MPV_OPTS "./$FILE"
 fi

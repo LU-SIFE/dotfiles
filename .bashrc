@@ -16,6 +16,7 @@ alias ls='ls --color=auto'
 alias ip='ip -c'
 alias grep='grep --color=auto'
 alias clera='clear'
+alias neofetch='neofetch --backend kitty --source ~/media/wallpaper.jpg'
 
 # Custom sudo prompt
 export SUDO_PROMPT=$(echo -e '\033[1m\033[38;5;219m[sudo] \e[0mEnter Password: ')

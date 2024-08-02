@@ -134,7 +134,7 @@ bindsym $mod+n exec "kitty nvim"
 #startup routine
 exec_always --no-startup-id autotiling
 exec --no-startup-id kitty --hold -e nvim
-exec --no-startup-id sleep 0.5 && kitty --hold -e ~/bin/startup
+exec --no-startup-id sleep 0.3 && kitty --hold -e ~/bin/startup
 
 # mpv player menu
 for_window [title="mpv_player"] floating enable resize set width 400
