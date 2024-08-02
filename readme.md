@@ -20,17 +20,17 @@
 #### Useful I3 Keybinds:
 |Key|Action|
 |:--|:-----|
-|`mod+d`|Dmenu|
-|`mod+n`|Open neovim in a new terminal|
-|`mod+enter`|Open a terminal|
-|`mod+m`|Open music player|
-|`mod+b`|Connect to bluetooth device|
-|`mod+q`|Kill current window|
-|`mod+shift+up`|brightness up|
-|`mod+shift+down`|brightness down|
-|`mod+p`|take a screenshot and save to ~/media/screenshots|
-|`mod+shift+-`|move window to scratchpad|
-|`mod+-`|show scratchpad windows|
+|`mod d`|Dmenu|
+|`mod n`|Open neovim in a new terminal|
+|`mod enter`|Open a terminal|
+|`mod m`|Open music player|
+|`mod b`|Connect to bluetooth device|
+|`mod q`|Kill current window|
+|`mod shift up`|brightness up|
+|`mod shift down`|brightness down|
+|`mod p`|take a screenshot and save to ~/media/screenshots|
+|`mod shift -`|move window to scratchpad|
+|`mod -`|show scratchpad windows|
 
 #### Useful Neovim Keybinds:
 |key|Action|
