@@ -21,7 +21,7 @@
 
 #### Useful I3 Keybinds:
 |Key|Action|
-|-|-|
+|:-|-:|
 |`mod+d`|Dmenu|
 |`mod+n`|Open neovim in a new terminal|
 |`mod+enter`|Open a terminal|
@@ -36,7 +36,7 @@
 
 #### Useful Neovim Keybinds:
 |key|Action|
-|---|------|
+|:---|------:|
 |`<C-,>`|Open a floating terminal|
 |`<S-u>`|Toggle file explorer|
 |`<Tab>`|Next buffer/tab|
