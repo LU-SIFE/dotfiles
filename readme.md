@@ -9,24 +9,22 @@
 **Shell:** Bash<br>
 **WM:** i3<br>
 
-**[!]** These dotfiles are configured using a 1366x768 screen resolution, other resolutions haven't been tested. Use at your own discretion. 
-
 ---
 ### Features:
 
 |FZF Dmenu|Music Player|
-|---|---|
+|---------|------------|
 |<img src='media/dotfiles/dmenu.gif' height='400'>|<img src='media/dotfiles/music.gif' height='400'>|
 
 
 #### Useful I3 Keybinds:
 |Key|Action|
-|:-|-:|
+|:--|:-----|
 |`mod+d`|Dmenu|
 |`mod+n`|Open neovim in a new terminal|
 |`mod+enter`|Open a terminal|
 |`mod+m`|Open music player|
-|`mod+b`|Connect to bluetooth device (_define a mac address in bin/bluetooth_)|
+|`mod+b`|Connect to bluetooth device|
 |`mod+q`|Kill current window|
 |`mod+shift+up`|brightness up|
 |`mod+shift+down`|brightness down|
@@ -36,7 +34,7 @@
 
 #### Useful Neovim Keybinds:
 |key|Action|
-|:---|------:|
+|:--|:-----|
 |`<C-,>`|Open a floating terminal|
 |`<S-u>`|Toggle file explorer|
 |`<Tab>`|Next buffer/tab|
@@ -50,12 +48,19 @@
 
 ---
 
+#### [!] Important stuff
+
+**[!]** I use the [pijulius/picom](https://github.com/pijulius/picom) fork of picom for animation support. Using another fork will likely break the [picom configuration](.config/picom.conf). please note that picom is not listed as a dependency for this reason so you don't accidently install the wrong one.
+
+**[!]** You might have to define the mac address of your bluetooth device in `bin/bluetooth`, or disable the keybind and script altogether if you don't want to use it.
+
+**[!]** These dotfiles are configured using a 1366x768 screen resolution, other resolutions haven't been tested. Use at your own discretion. 
+
 #### Dependencies:
 ```
-yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek
+yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek neofetch
 ```
 
-**[!]** picom is also a dependency, but requires the [pijulius/picom](https://github.com/pijulius/picom) fork of picom for animation support. Using another fork will likely break the [picom configuration](.config/picom.conf).
 
 after installing the dependencies, just run `yadm clone https://github.com'lu-sife/dotfiles.git`<br>
 if you have existing dotfiles, you can overwrite them with `yadm fetch --all` and `yadm reset --hard origin/master`
