@@ -122,8 +122,8 @@ for_window [title="FZF"] move position center
 bindsym $mod+d exec kitty --title FZF -e ~/bin/run resize set 100 px
 
 #brightness keybinds
-bindsym $mod+mod1+Up exec "brightnessctl s 5%+"
-bindsym $mod+mod1+Down exec "brightnessctl s 5%-"
+bindsym $mod+mod1+Up exec "brightnessctl s 1%+"
+bindsym $mod+mod1+Down exec "brightnessctl s 1%-"
 
 #screenshots
 bindsym $mod+p exec "maim ~/Media/screenshots/$(date +%s).png"

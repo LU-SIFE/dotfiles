@@ -5,7 +5,7 @@ xrdb ~/.Xresources
 feh --bg-scale ~/media/wallpaper.jpg &
 
 #compositor, autotiling, and wm
-picom &
+picom --blur-method box &
 autotiling &
 i3
 
