@@ -26,7 +26,7 @@
 |`mod+n`|Open neovim in a new terminal|
 |`mod+enter`|Open a terminal|
 |`mod+m`|Open music player|
-|`mod+b`|Connect to bluetooth device (_you'll have to define a mac address in bin/bluetooth_)|
+|`mod+b`|Connect to bluetooth device (_define a mac address in bin/bluetooth_)|
 |`mod+q`|Kill current window|
 |`mod+shift+up`|brightness up|
 |`mod+shift+down`|brightness down|
