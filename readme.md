@@ -65,7 +65,7 @@ yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm 
 
 after installing the dependencies, just run the following:
 ```
-yadm clone https://github.com'lu-sife/dotfiles.git
+yadm clone https://github.com/lu-sife/dotfiles.git
 ```
 
 if you have existing dotfiles, you can overwrite them with:
