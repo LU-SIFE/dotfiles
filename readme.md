@@ -44,23 +44,24 @@
 |`:CarbonNowSh`|Open the selected code in [carbon.now.sh](https://carbon.now.sh)|
 
 
-### Installation:
+### [!] Important Stuff:
 
 ---
 
-#### [!] Important stuff
-
-**[!]** I use the [pijulius/picom](https://github.com/pijulius/picom) fork of picom for animation support. Using another fork will likely break the [picom configuration](.config/picom.conf). please note that picom is not listed as a dependency for this reason so you don't accidently install the wrong one.
+**[!]** I use the [pijulius/picom](https://github.com/pijulius/picom) fork of picom for animation support. Using another fork will likely break the [picom configuration](.config/picom.conf). please note that picom is not listed in the dependencies for this reason.
 
 **[!]** You might have to define the mac address of your bluetooth device in `bin/bluetooth`, or disable the keybind and script altogether if you don't want to use it.
 
 **[!]** These dotfiles are configured using a 1366x768 screen resolution, other resolutions haven't been tested. Use at your own discretion. 
 
+---
+
+### Installation:
+
 #### Dependencies:
 ```
 yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek neofetch
 ```
-
 
 after installing the dependencies, just run the following:
 ```
@@ -72,3 +73,5 @@ if you have existing dotfiles, you can overwrite them with:
 yadm fetch --all &&
 yadm reset --hard origin/master
 ```
+
+---
