@@ -17,7 +17,7 @@
 ### Music player:
 (pretty much the same as the dmenu. but for music)
 
-<img src='media/dotfiles/music.gif' align='right' width='100'>
+<img src='media/dotfiles/music.gif' align='left' width='300'>
 
 ### Installation:
 
