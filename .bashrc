@@ -11,6 +11,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 
 # Alias some stuff
+alias cmatrix='cmatrix -C magenta'
 alias clock='tclock -c=#9D00FF'
 alias ls='ls --color=auto'
 alias ip='ip -c'
