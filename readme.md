@@ -26,11 +26,11 @@
 |`mod m`|Open music player|
 |`mod b`|Connect to bluetooth device|
 |`mod q`|Kill current window|
-|`mod shift up`|brightness up|
-|`mod shift down`|brightness down|
-|`mod p`|take a screenshot and save to ~/media/screenshots|
-|`mod shift -`|move window to scratchpad|
-|`mod -`|show scratchpad windows|
+|`mod shift up`|Brightness up|
+|`mod shift down`|Brightness down|
+|`mod p`|Take a screenshot and save to ~/media/screenshots|
+|`mod shift -`|Move window to scratchpad|
+|`mod -`|Show scratchpad windows|
 
 #### Useful Neovim Keybinds:
 |key|Action|
@@ -62,6 +62,8 @@
 ```
 yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek neofetch
 ```
+
+I probably forgot a few things.
 
 after installing the dependencies, just run the following:
 ```
