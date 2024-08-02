@@ -13,11 +13,6 @@
 
 ---
 
-### FZF Dmenu:
-
-### Music player:
-(pretty much the same as the dmenu. but for music)
-
 |FZF Dmenu|Music Player|
 |---|---|
 |<img src='media/dotfiles/dmenu.gif' height='400'>|<img src='media/dotfiles/music.gif' height='400'>|
