@@ -18,6 +18,22 @@
 |---|---|
 |<img src='media/dotfiles/dmenu.gif' height='400'>|<img src='media/dotfiles/music.gif' height='400'>|
 
+
+#### Useful I3 Keybinds:
+|Key|Action|
+|-|-|
+|`mod+d`|Dmenu|
+|`mod+n`|Open neovim in a new terminal|
+|`mod+enter`|Open a terminal|
+|`mod+m`|Open music player|
+|`mod+b`|Connect to bluetooth device (_you'll have to define a mac address in bin/bluetooth_)|
+|`mod+q`|Kill current window|
+|`mod+shift+up`|brightness up|
+|`mod+shift+down`|brightness down|
+|`mod+p`|take a screenshot and save to ~/media/screenshots|
+|`mod+shift+-`|move window to scratchpad|
+|`mod+-`|show scratchpad windows|
+
 #### Useful Neovim Keybinds:
 |key|Action|
 |---|------|
@@ -36,7 +52,7 @@
 
 #### Dependencies:
 ```
-yay -S xorg xorg-server xorg-init i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek
+yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek
 ```
 
 **[!]** picom is also a dependency, but requires the [pijulius/picom](https://github.com/pijulius/picom) fork of picom for animation support. Using another fork will likely break the [picom configuration](.config/picom.conf).

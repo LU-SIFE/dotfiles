@@ -116,17 +116,17 @@ default_border none
 gaps inner 5
 
 #dmenu
-for_window [title="FZF"] floating enable resize set width 400 
-for_window [title="FZF"] resize set height 400
-for_window [title="FZF"] move position center
-bindsym $mod+d exec kitty --title FZF -e ~/bin/run resize set 100 px
+for_window [title="fzf_dmenu"] floating enable resize set width 400 
+for_window [title="fzf_dmenu"] resize set height 400
+for_window [title="fzf_dmenu"] move position center
+bindsym $mod+d exec kitty --title fzf_dmenu -e ~/bin/run resize set 100 px
 
 #brightness keybinds
 bindsym $mod+mod1+Up exec "brightnessctl s 1%+"
 bindsym $mod+mod1+Down exec "brightnessctl s 1%-"
 
 #screenshots
-bindsym $mod+p exec "maim ~/Media/screenshots/$(date +%s).png"
+bindsym $mod+p exec "maim ~/media/screenshots/$(date +%s).png"
 
 #neovim
 bindsym $mod+n exec "kitty nvim"
@@ -143,8 +143,6 @@ for_window [title="mpv_player"] move position 5px 5px
 bindsym $mod+m exec kitty --title mpv_player -e ~/bin/music
 
 #bluetooth connection
-for_window [title="bluetooth"] floating enable resize set 500 500
-for_window [title="bluetooth"] move position center
 bindsym $mod+b exec kitty --title bluetooth -e ~/bin/bluetooth
 
 # Make the currently focused window a scratchpad
