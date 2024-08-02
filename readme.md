@@ -12,10 +12,23 @@
 **[!]** These dotfiles are configured using a 1366x768 screen resolution, other resolutions haven't been tested. Use at your own discretion. 
 
 ---
+### Features:
 
 |FZF Dmenu|Music Player|
 |---|---|
 |<img src='media/dotfiles/dmenu.gif' height='400'>|<img src='media/dotfiles/music.gif' height='400'>|
+
+#### Useful Neovim Keybinds:
+|key|Action|
+|---|------|
+|`<C-,>`|Open a floating terminal|
+|`<S-u>`|Toggle file explorer|
+|`<Tab>`|Next buffer/tab|
+|`<S-Tab>`|Previous buffer/tab|
+|`<C-Up>`|Add cursor above|
+|`<C-Down>`|Add cursor below|
+|`:CarbonNowSh`|Open the selected code in [carbon.now.sh](https://carbon.now.sh)|
+
 
 ### Installation:
 
