@@ -12,12 +12,12 @@
 **[!]** These dotfiles are configured using a 1366x768 screen resolution, other resolutions haven't been tested. Use at your own discretion. 
 
 ### FZF Dmenu:
-![](media/dotfiles/dmenu.gif)
+<img src='media/dotfiles/dmenu.gif' height='400'>
 
 ### Music player:
 (pretty much the same as the dmenu. but for music)
 
-<img src='media/dotfiles/music.gif' align='left' width='300'>
+<img src='media/dotfiles/music.gif' height='400'>
 
 ### Installation:
 
