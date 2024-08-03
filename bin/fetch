@@ -1,0 +1,5 @@
+clear &&
+neofetch --backend kitty --size 300 --source ~/media/dotfiles/fetch.png &&
+tput civis &&
+read -sn 1 &&
+tput cvvis
