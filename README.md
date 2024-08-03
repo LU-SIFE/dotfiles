@@ -1,6 +1,6 @@
 ## Dotfiles
 
-![](media/dotfiles/screenshot.png)
+![](media/dotfiles/screenshot1.png)
 **Theme:** Ashes (Dark)<br>
 **Terminal:** Kitty<br>
 **Editor:** Neovim w/ Lazy.nvim (_180ms startup time_)<br>
