@@ -18,7 +18,7 @@
 
 Window animations:
 
-https://github.com/LU-SIFE/dotfiles/blob/71e0a53ae95e82c86e1377a04bc59f6b871c055c/media/dotfiles/video.mp4
+https://github.com/user-attachments/assets/5b377a4c-63ed-46ce-9674-a81ad99060f7
 
 #### Useful I3 Keybinds:
 |Key|Action|
