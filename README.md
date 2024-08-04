@@ -63,7 +63,7 @@ https://github.com/user-attachments/assets/5b377a4c-63ed-46ce-9674-a81ad99060f7
 
 #### Dependencies:
 ```
-yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek neofetch pokeget cbonsai
+yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek neofetch pokeget cbonsai cmus
 ```
 
 I probably forgot a few things.
@@ -94,5 +94,8 @@ yadm reset --hard origin/master
 |`peek`|useful for showing off your setup in a gif :D|
 |`colorpicker`|idk why i have this, I've used it once|
 
+---
 
+### To-Do:
 
+I'll probably swap to `cmus` instead of my mpv wrapper, although my wrapper is really nice for a little player that doesn't need much attention. I'm still learning it though :3
