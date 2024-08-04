@@ -17,7 +17,8 @@
 |<img src='media/dotfiles/dmenu.gif' height='400'>|<img src='media/dotfiles/music.gif' height='400'>|
 
 Window animations:
-<video src="media/dotfiles/video.mp4" controls="controls"></video>
+
+https://github.com/LU-SIFE/dotfiles/blob/71e0a53ae95e82c86e1377a04bc59f6b871c055c/media/dotfiles/video.mp4
 
 #### Useful I3 Keybinds:
 |Key|Action|
