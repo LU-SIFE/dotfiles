@@ -3,7 +3,9 @@ sleep 0.1 &&
 
 i3-msg -q resize set width 409 px &&
 
+~/bin/colors &&
+pokeget sylveon &&
 echo -e "$(date)\n" &&
-	~/bin/colors &&
 echo -e "Happy Coding!\n" &&
+
 exit

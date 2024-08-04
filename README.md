@@ -60,7 +60,7 @@
 
 #### Dependencies:
 ```
-yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek neofetch
+yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek neofetch pokeget cbonsai
 ```
 
 I probably forgot a few things.
@@ -77,3 +77,19 @@ yadm reset --hard origin/master
 ```
 
 ---
+
+### Random Cool Stuff:
+
+|Name/Package||
+|:-|:-|
+|`pokeget`|display pokemon in your terminal!|
+|`cbonsai`|grow a tree :D|
+|`cmatrix`|become a hacker|
+|`tclock`|useful for when `date` doesn't cut it|
+|`bin/fetch`|neofetch wrapper c:|
+|`bin/rain`|rain, so calming...|
+|`peek`|useful for showing off your setup in a gif :D|
+|`colorpicker`|idk why i have this, I've used it once|
+
+
+
