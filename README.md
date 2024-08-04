@@ -17,8 +17,7 @@
 |<img src='media/dotfiles/dmenu.gif' height='400'>|<img src='media/dotfiles/music.gif' height='400'>|
 
 Window animations:
-![](media/dotfiles/video.mp4)
-
+<video src="media/dotfiles/video.mp4" controls="controls"></video>
 
 #### Useful I3 Keybinds:
 |Key|Action|
