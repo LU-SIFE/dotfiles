@@ -63,7 +63,7 @@ https://github.com/user-attachments/assets/5b377a4c-63ed-46ce-9674-a81ad99060f7
 
 #### Dependencies:
 ```
-yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek neofetch pokeget cbonsai cmus
+yay -S xorg xorg-server xorg-init ly brightnessctl i3 feh autotiling kitty zsh yadm neovim luarocks fzf mpv ttf-firacode-nerd capitaine-cursors bluez tclock cmatrix colorpicker peek neofetch pokeget cbonsai cmus cava cowsay pipes.sh fortune lolcat
 ```
 
 I probably forgot a few things.
@@ -93,6 +93,11 @@ yadm reset --hard origin/master
 |`bin/rain`|rain, so calming...|
 |`peek`|useful for showing off your setup in a gif :D|
 |`colorpicker`|idk why i have this, I've used it once|
+|`cowsay`|c: cows :D|
+|`ponysay`|cowsay but with ponies and better c:|
+|`lolcat`|make everything rainbow|
+|`fortune`|get inspirational quotes|
+|`pipes.sh`|terminal screensaver for fun|
 
 ---
 

@@ -2,7 +2,6 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
 # Add custom bin files to path
 export PATH="~/bin:$PATH"
 
@@ -12,7 +11,7 @@ export VISUAL='nvim'
 
 # Alias some stuff
 alias cmatrix='cmatrix -C magenta'
-alias clock='tclock -c=#9D00FF'
+alias clock='tclock -c=magenta'
 alias ls='ls --color=auto'
 alias ip='ip -c'
 alias grep='grep --color=auto'
