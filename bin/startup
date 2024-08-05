@@ -5,7 +5,6 @@ i3-msg -q resize set width 409 px &&
 
 ~/bin/colors &&
 pokeget sylveon --hide-name &&
-echo -e "$(date)\n" &&
-fortune &&
+fortune -n 160 &&
 
 exit
