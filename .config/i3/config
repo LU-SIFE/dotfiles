@@ -143,7 +143,7 @@ for_window [title="mpv_player"] move position 5px 5px
 bindsym $mod+m exec kitty --title mpv_player -e ~/bin/music
 
 #bluetooth connection
-bindsym $mod+b exec kitty --title bluetooth -e ~/bin/bluetooth
+bindsym $mod+b exec --no-startup-id kitty --title bluetooth -e ~/bin/bluetooth
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad

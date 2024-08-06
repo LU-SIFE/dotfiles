@@ -101,6 +101,9 @@ yadm reset --hard origin/master
 
 ---
 
-### To-Do:
+### To-Do: (so I don't forget)
 
-I'll probably swap to `cmus` instead of my mpv wrapper, although my wrapper is really nice for a little player that doesn't need much attention. I'm still learning it though :3
+- I'll probably swap to `cmus` instead of my mpv wrapper, although my wrapper is really nice for a little player that doesn't need much attention. I'm still learning it though :3
+- swap to a vylet wallpaper at some point. I have a few in mind, maybe the art for 'creature city' :D
+- maybe brush up my nvim config for faster load times.
+
