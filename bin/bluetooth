@@ -1,4 +1,2 @@
-i3-msg -q floating enable move position center resize set 500 500
-
 bluetoothctl connect 04:99:B9:2C:07:8B | lolcat && read -sn 1 && exit
 

@@ -122,8 +122,8 @@ for_window [title="fzf_dmenu"] move position center
 bindsym $mod+d exec kitty --title fzf_dmenu -e ~/bin/run resize set 100 px
 
 #brightness keybinds
-bindsym $mod+mod1+Up exec "brightnessctl s 1%+"
-bindsym $mod+mod1+Down exec "brightnessctl s 1%-"
+bindsym $mod+mod1+Up exec --no-startup-id "brightnessctl s 1%+"
+bindsym $mod+mod1+Down exec --no-startup-id "brightnessctl s 1%-"
 
 #screenshots
 bindsym $mod+p exec "maim ~/media/screenshots/$(date +%s).png"
@@ -137,13 +137,16 @@ exec --no-startup-id kitty --hold -e nvim
 exec --no-startup-id sleep 0.3 && kitty --hold -e ~/bin/startup
 
 # mpv player menu
-for_window [title="mpv_player"] floating enable resize set width 400
-for_window [title="mpv_player"] resize set height 500
+for_window [title="mpv_player"] floating enable resize set 400 500
 for_window [title="mpv_player"] move position 5px 5px
 bindsym $mod+m exec kitty --title mpv_player -e ~/bin/music
 
 #bluetooth connection
-bindsym $mod+b exec --no-startup-id kitty --title bluetooth -e ~/bin/bluetooth
+
+for_window [title="bluetooth_connect"] floating enable resize set width 300
+for_window [title="bluetooth_connect"] resize set height 300
+for_window [title="bluetooth_connect"] move position center
+bindsym $mod+b exec  kitty --title bluetooth_connect -e ~/bin/bluetooth
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad

@@ -11,7 +11,7 @@ opts = {
 		['core.concealer'] = {},
 		['core.dirman'] = {
 			config = {
-				workspaces = {notes = '~/notes'},
+				workspaces = {notes = '~/Projects/notes'},
 				default_workspace = 'notes',
 			},
 		},

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+OPTS='--info=inline --print-query --bind=ctrl-space:print-query,tab:replace-query'
+
+hyprctl dispatch exec $(compgen -c | sort -u | fzf $OPTS | tail -1)
+
