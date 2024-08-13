@@ -1,0 +1,9 @@
+#! /bin/bash
+#
+#
+
+echo "Commit Message:"
+read reply
+
+yadm commit -am "$reply"
+yadm push
