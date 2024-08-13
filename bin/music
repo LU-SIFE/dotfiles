@@ -28,7 +28,16 @@ if [ -z "$FILE" ]
 then
 	exit
 else
-	#resizes the window once the song has been selected (i3 specific)
-	i3-msg -q resize set 475 100 &&  
+	#resize window based on desktop manager (hyprland or i3)
+
+	if [ $XDG_SESSION_DESKTOP = "hyprland" ]
+	then
+		hyprctl dispatch resizeactive exact 400 100
+	
+	elif [ $XDG_SESSION_DESKTOP = "i3" ]
+	then
+		i3-msg -q resize set 400 100  
+	fi
+	
 	mpv $MPV_OPTS "./$FILE"
 fi
