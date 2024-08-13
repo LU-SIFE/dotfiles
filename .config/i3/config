@@ -126,7 +126,7 @@ bindsym $mod+mod1+Up exec --no-startup-id "brightnessctl s 1%+"
 bindsym $mod+mod1+Down exec --no-startup-id "brightnessctl s 1%-"
 
 #screenshots
-bindsym $mod+p exec "maim ~/media/screenshots/$(date +%s).png"
+bindsym $mod+p exec "maim ~/media/screenshots/sc$(ls | wc -l).png"
 
 #neovim
 bindsym $mod+n exec "kitty nvim"
