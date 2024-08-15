@@ -1,5 +1,3 @@
+#! /bin/bash
 clear &&
-neofetch --backend kitty --size 300 --source ~/media/dotfiles/fetch.png &&
-tput civis &&
-read -sn 1 &&
-tput cvvis
+neofetch --backend kitty --size 275 --source ~/media/dotfiles/fetch.png
