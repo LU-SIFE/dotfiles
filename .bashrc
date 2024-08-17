@@ -1,6 +1,6 @@
 # ~/.bashrc
 
-# If not running interactively, don't do anything
+# interactivity
 [[ $- != *i* ]] && return
 
 # Add custom bin files to path
