@@ -1,2 +1,2 @@
-bluetoothctl connect 04:99:B9:2C:07:8B | lolcat && read -sn 1 && exit
+bluetoothctl connect 98:47:44:96:74:9C | lolcat && read -sn 1 && exit
 

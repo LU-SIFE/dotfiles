@@ -18,6 +18,7 @@ alias ip='ip -c'
 alias grep='grep --color=auto'
 alias clera='clear'
 alias why='nvim ~/.config/hypr/hyprland.conf'
+alias work='cd ~/Projects'
 
 # Custom sudo prompt
 export SUDO_PROMPT=$(echo -e '\033[1m\033[38;5;219m[sudo] \e[0mEnter Password: ')
