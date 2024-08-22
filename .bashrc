@@ -19,11 +19,10 @@ alias grep='grep --color=auto'
 alias clera='clear'
 alias why='nvim ~/.config/hypr/hyprland.conf'
 alias work='cd ~/Projects'
+alias kb='cd ~/Projects/kb'
 
 # Custom sudo prompt
 export SUDO_PROMPT=$(echo -e '\033[1m\033[38;5;219m[sudo] \e[0mEnter Password: ')
 
 # Custom prompt
 PS1='\033[1m\033[38;5;219m[ > ]\e[0m '
-
-# ty for that. uhm im not gonna type much, just, ty. ily <3 imma listen to tunes and play super auto pets
