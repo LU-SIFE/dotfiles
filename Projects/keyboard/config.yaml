@@ -1,0 +1,90 @@
+units:
+  # Proxy Spacing Variables
+  kx: cx
+  ky: cy
+  # Padding Variables
+  px: kx + 4
+  py: ky + 4
+points:
+  zones:
+    matrix:
+      anchor:
+        shift: [30,-100]
+      key:
+        padding: 1ky
+        spread: 1kx
+
+      columns:
+        outer:
+          key:
+            column_net: P020
+        pinky:
+          key:
+            column_net: P022
+        ring:
+          key:
+            stagger: 2.5
+            column_net: P024
+        middle:
+          key:
+            stagger: 2.5
+            column_net: P100
+        index:
+          key:
+            stagger: -2.5
+            column_net: P011
+        inner:
+          key:
+            stagger: -2.5
+            column_net: P017
+      rows:
+        mod:
+          row_net: P113
+        bottom:
+          row_net: P115
+        home:
+          row_net: P002
+        top:
+          row_net: P029
+        num:
+          row_net: P031
+
+outlines:
+  raw:
+  - what: rectangle
+    where: true
+    size: [px, py]
+  keys:
+  - what: rectangle
+    where: true
+    size: [kx-0.5, ky-0.5]
+  left:
+    - what: rectangle
+      where: true
+      size: [px,py]
+      fillet: 2
+  combo:
+  - name: left
+  - operation: subtract
+    name: keys
+
+pcbs:
+  left:
+    outlines:
+      main:
+        outline: left
+    footprints:
+      keyswitches:
+        where: true
+        what: choc
+        params:
+          hotswap: true
+          from: "{{col_net}}"
+          to: "{{colrow}}"
+      nice_nano:
+        what: nice_nano
+        params:
+          orientation: up
+        where:
+          ref: matrix_inner_num
+          shift: [-9, -2]

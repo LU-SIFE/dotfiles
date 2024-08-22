@@ -1,0 +1,26 @@
+
+
+6 x 5 (split)
+
+Row 1: ~    1   2   3   4   5         6   7   8   9   0   BKSP
+
+Row 2: TAB  Q   W   E   R   T         Y   U   I   O   P   \
+
+Row 3: CAP  A   S   D   F   G         H   J   K   L   ;   RTN
+
+Row 4: SHFT Z   X   C   V   B         N   M   ,   .   /   '
+
+Row 5: CTRL ALT CMD MOD SPC ESC       SPC MOD L   D   U   R
+
+
+Mod Layout:
+
+Row 1: f1 f2 f3 f4 f5 f6              f7 f8 f9 f10 f11 f12
+
+Row 2: X  X  X  -  +  X               X  =  *  MP  MD  MU
+
+Row 3: X  X  X  {  }  X               X  (  )  X   PD  PU
+
+Row 4: X  X  X  X  X  X               X  X  X  X   X   X
+
+Row 5: X  X  X  X  X  X               X  X  X  X   X   X
