@@ -1,3 +1,5 @@
+**!** These dotfiles have been retired because I got a new laptop. this repo will be archived / deleted soon.
+
 ## Dotfiles
 
 ![](media/dotfiles/screenshot1.png)
